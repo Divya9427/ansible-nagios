@@ -211,6 +211,11 @@ command[check_load]=/usr/lib64/nagios/plugins/check_load -w 15,10,5 -c 30,25,20
 command[check_rootfs]=/usr/lib64/nagios/plugins/check_disk -w 20% -c 10% -p /dev/sda1
 command[check_zombie_procs]=/usr/lib64/nagios/plugins/check_procs -w 5 -c 10 -s Z
 command[check_total_procs]=/usr/lib64/nagios/plugins/check_procs -w 400 -c 500 
+command[check_mem]=/usr/lib/nagios/plugins/check_mem.pl -f -w 20 -c 10
+command[check_sda1]=/usr/lib/nagios/plugins/check_disk -w 20% -c 10% -p /dev/sda1
+command[check_cpu_stats]=/usr/lib64/nagios/plugins/check_cpu_stats -w 70 -c 90
+command[check_load]=/usr/lib/nagios/plugins/check_load -w 15,10,5 -c 30,25,20
+
 
 # The following examples allow user-supplied arguments and can
 # only be used if the NRPE daemon was compiled with support for 
