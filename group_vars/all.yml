@@ -5,7 +5,7 @@
 ##
 
 # global vars
-monit_host: nagios-host
+monit_host: nagios-master
 
 ## all inventory groups in one list
-group_list: ["web","db","vm"]
+group_list: ["nagios-client"]
