@@ -17,7 +17,6 @@
     - {src: 'hosts.cfg.j2', dest: '/etc/nagios/conf.d/hosts.cfg'}
     - {src: 'hostgroup.cfg.j2', dest: '/etc/nagios/conf.d/hostgroups.cfg'}
     - {src: 'service-ping-ssh.cfg.j2', dest: '/etc/nagios/conf.d/service-ping-ssh.cfg'}
-    - {src: 'service-custom-http.cfg.j2', dest: '/etc/nagios/conf.d/service-custom-http.cfg'}
     - {src: 'service-nrpe-common.cfg.j2', dest: '/etc/nagios/conf.d/service-nrpe-common.cfg'}
   notify:
     - restart nagios  
