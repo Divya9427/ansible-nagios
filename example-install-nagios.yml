@@ -3,7 +3,7 @@
 - hosts: all
   become: true
   vars_files:
-    - 'group_vars/web.yml'
+    - 'group_vars'
 
   roles:
     - nagios-server
